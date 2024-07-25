@@ -2,9 +2,7 @@ name: Deploy Lambda
 
 on:
   push:
-    paths:
-      - ./app.py
-
+    branches: [ main ]
 jobs:
   deploy:
     runs-on: code-scanning
